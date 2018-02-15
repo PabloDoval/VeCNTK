@@ -11,4 +11,5 @@ class LogisticRegression(MnistModel):
         w = cntk.Parameter((self.number_features,  self.number_labels),
                            init=cntk.glorot_uniform(), name='W')
         b = cntk.Parameter((self.number_labels,), init=0, name='b')
+        
         self.model = cntk.times(self.input_transform, w) + b

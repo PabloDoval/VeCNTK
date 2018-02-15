@@ -11,7 +11,7 @@ from utils.devices import set_devices
 from evaluation.test_mnist import predict_minist_images
 #from models.logistic_regression import LogisticRegression
 #from models.ml_perceptron import  MlPerceptron
-#from models.convolutional_nn import ConvolutionalNN
+# from models.convolutional_nn import ConvolutionalNN
 from models.convolutional_maxpooling import ConvolutionalMaxPooling
 
 
@@ -23,8 +23,7 @@ if __name__ == '__main__':
     num_output_classes = 10
 
     #model_definition = MlPerceptron(input_dim, num_output_classes)
-    model_definition = ConvolutionalMaxPooling(
-        input_dim_model, num_output_classes)
+    model_definition = ConvolutionalMaxPooling(input_dim_model, num_output_classes)
 
     learning_rate = 0.2
     lr_schedule = cntk.learning_rate_schedule(

@@ -1,4 +1,4 @@
-name: cntk23-cntkveinteractive
+name: cntk24-cntkveinteractive
 channels:
 - defaults
 dependencies:
@@ -20,7 +20,7 @@ dependencies:
 - wheel=0.29.0=py36_0
 - tensorflow
 - pip:
-  - https://cntk.ai/PythonWheel/GPU-1bit-SGD/cntk-2.3-cp36-cp36m-win_amd64.whl ; sys_platform == "win32"
-  - https://cntk.ai/PythonWheel/GPU-1bit-SGD/cntk-2.3-cp36-cp36m-linux_x86_64.whl ; sys_platform == "linux"
+  - https://cntk.ai/PythonWheel/GPU-1bit-SGD/cntk-2.4-cp36-cp36m-win_amd64.whl ; sys_platform == "win32"
+  - https://cntk.ai/PythonWheel/GPU-1bit-SGD/cntk-2.4-cp36-cp36m-linux_x86_64.whl ; sys_platform == "linux"
   - pylint==1.7.2
   - autopep8==1.3.2
